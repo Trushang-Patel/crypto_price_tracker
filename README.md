@@ -33,7 +33,7 @@ A Flutter application that fetches real-time cryptocurrency prices and visualize
 ### Installation
 
 1. Clone this repository
-https://github.com/Trushang-Patel/crypto-price-tracker.git
+https://github.com/Trushang-Patel/crypto_price_tracker.git
 
 2. Navigate to the project directory
 cd crypto-price-tracker
