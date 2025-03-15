@@ -13,58 +13,75 @@ A Flutter application that fetches real-time cryptocurrency prices and visualize
 
 ## Technologies Used
 
-- Flutter for cross-platform mobile app development
-- Provider package for state management
-- fl_chart for interactive and responsive charts
-- CoinGecko API for real-time cryptocurrency data
-- http package for API integration
-- shared_preferences for local storage
-- intl package for formatting numbers and dates
+- **Flutter**: Cross-platform mobile app development framework
+- **Provider**: State management solution for Flutter
+- **fl_chart**: For creating interactive and responsive charts
+- **CoinGecko API**: For real-time cryptocurrency data
+- **http package**: For making HTTP requests to the CoinGecko API
+- **shared_preferences**: For local storage to save user preferences (e.g., favorite cryptocurrencies)
+- **intl package**: For formatting numbers and dates
 
 ## Getting Started
 
 ### Prerequisites
 
-- Flutter SDK (latest version)
-- Dart SDK (latest version)
-- Android Studio / VS Code with Flutter plugins
-- iOS Simulator (for Mac) or Android Emulator
+To get started, ensure you have the following installed:
+
+- **Flutter SDK** (latest version)
+- **Dart SDK** (latest version)
+- **Android Studio / VS Code** (with Flutter and Dart plugins)
+- **iOS Simulator** (for macOS) or **Android Emulator**
 
 ### Installation
 
-1. Clone this repository
-https://github.com/Trushang-Patel/crypto_price_tracker.git
+1. Clone this repository:
 
-2. Navigate to the project directory
-cd crypto-price-tracker
+```bash
+git clone https://github.com/Trushang-Patel/crypto_price_tracker.git
+```
 
+2. Navigate to the project directory:
+```bash
+cd crypto_price_tracker
+```
 
-3. Install dependencies
+3. Install the required dependencies:
+```bash
 flutter pub get
+```
 
-
-4. Run the app
+4.Run the app on your desired platform (iOS or Android):
+```bash
 flutter run
-
+```
 
 ## API Integration
 
-This app uses the free CoinGecko API to fetch cryptocurrency data. No API key is required for basic usage, but there are rate limits. For more details, check the [CoinGecko API documentation](https://www.coingecko.com/en/api/documentation).
+This app uses the CoinGecko API to fetch cryptocurrency data. The CoinGecko API is free to use and does not require an API key. However, there are rate limits, so please be mindful of the requests.
+
+For more details, refer to the [CoinGecko API documentation](https://www.coingecko.com/en/api/documentation).
 
 ## Performance Optimization
 
-The app implements several performance optimization techniques:
-- Caching of chart data to minimize API calls
-- Efficient UI rendering with `const` constructors where possible
-- Lazy loading of screens through IndexedStack
-- Throttling of API requests to avoid rate limiting
+To enhance performance, the app incorporates the following techniques:
+
+- **Caching**: Chart data is cached to reduce redundant API calls.
+- **Efficient UI Rendering**: The app uses `const` constructors to improve rendering performance.
+- **Lazy Loading**: Screens are lazily loaded using `IndexedStack` to improve initial load times.
+- **Throttling API Requests**: To avoid hitting the CoinGecko rate limits, API requests are throttled.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
-- [CoinGecko API](https://www.coingecko.com/) for providing cryptocurrency data
-- [fl_chart](https://pub.dev/packages/fl_chart) for the charting functionality
-- [Flutter Team](https://flutter.dev/) for the amazing framework
+- [CoinGecko API](https://www.coingecko.com/) for providing cryptocurrency data.
+- [fl_chart](https://pub.dev/packages/fl_chart) for the charting functionality.
+- [Flutter Team](https://flutter.dev/) for developing the amazing Flutter framework.
+
+## Contribution
+
+Feel free to contribute to this project! You can fork the repository, make changes, and submit pull requests. Any improvements are appreciated.
+
+
